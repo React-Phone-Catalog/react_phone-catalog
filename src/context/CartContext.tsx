@@ -35,7 +35,7 @@ function readCart(): CartItem[] {
     }
 
     return parsedCart as CartItem[];
-  } catch (error) {
+  } catch {
     localStorage.removeItem(CART_STORAGE_KEY);
 
     return [];

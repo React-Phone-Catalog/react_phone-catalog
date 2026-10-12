@@ -37,7 +37,7 @@ function readFavorites(): Product[] {
     }
 
     return parsedFavorites as Product[];
-  } catch (error) {
+  } catch {
     localStorage.removeItem(FAVORITES_STORAGE_KEY);
 
     return [];
